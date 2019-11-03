@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM FROM arm32v7/alpine:latest
 
 # Install nginx and ffmpeg
 RUN apk add --update nginx ffmpeg && rm -rf /var/cache/apk/* && mkdir /tmp/stream
